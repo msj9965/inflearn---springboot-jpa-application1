@@ -2,6 +2,7 @@ package jpabook.jpashop;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import jpabook.jpashop.domain.Member;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -11,7 +12,7 @@ public class MemberRepository {
 
     public Long save(Member member){
         em.persist(member);
-        return member.getMemberId();
+        return member.getId();
     }
 
     public Member findById(Long id){
