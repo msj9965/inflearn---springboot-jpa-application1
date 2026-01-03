@@ -7,7 +7,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Delivrey {
+public class Delivery {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "delivery_id")
